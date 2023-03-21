@@ -1,0 +1,78 @@
+{
+  "kind": "collectionType",
+  "collectionName": "burqas",
+  "info": {
+    "singularName": "burqa",
+    "pluralName": "burqas",
+    "displayName": "burqa",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    },
+    "sub_category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::sub-category.sub-category"
+    },
+    "shop_price": {
+      "type": "integer",
+      "required": true
+    },
+    "base_price": {
+      "type": "integer",
+      "required": true
+    },
+    "inStock": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "stock_quantity": {
+      "type": "integer",
+      "required": true
+    },
+    "color_variants": {
+      "type": "component",
+      "repeatable": true,
+      "component": "burqa-variants.variants"
+    },
+    "cover_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

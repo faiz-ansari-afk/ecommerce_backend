@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "carts",
+  "info": {
+    "singularName": "cart",
+    "pluralName": "carts",
+    "displayName": "cart",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cart_uid": {
+      "type": "uid",
+      "required": true
+    },
+    "cart_data": {
+      "type": "json"
+    },
+    "cart_status": {
+      "type": "enumeration",
+      "enum": [
+        "ghosted",
+        "active"
+      ]
+    }
+  }
+}

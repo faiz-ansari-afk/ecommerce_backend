@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_variants_variants",
+  "info": {
+    "displayName": "burqa_variants",
+    "icon": "align-center",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "color": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "integer"
+    }
+  }
+}

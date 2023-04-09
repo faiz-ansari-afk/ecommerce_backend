@@ -71,6 +71,11 @@
     },
     "additional_data": {
       "type": "json"
+    },
+    "shop": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::shop.shop"
     }
   }
 }

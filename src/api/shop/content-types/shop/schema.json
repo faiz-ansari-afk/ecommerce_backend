@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shops",
+  "info": {
+    "singularName": "shop",
+    "pluralName": "shops",
+    "displayName": "shop",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "contact_mobile": {
+      "type": "integer",
+      "required": true,
+      "max": 10,
+      "min": 10
+    },
+    "email": {
+      "type": "string",
+      "required": true,
+      "regex": "/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/"
+    },
+    "cover_image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "address": {
+      "type": "text",
+      "required": true
+    },
+    "nickname": {
+      "type": "string"
+    },
+    "whatsapp_number": {
+      "type": "integer",
+      "required": true,
+      "max": 10,
+      "min": 10
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "additional_data": {
+      "type": "json"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product"
+    }
+  }
+}

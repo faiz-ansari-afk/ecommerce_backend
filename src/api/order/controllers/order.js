@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * burqa controller
+ * order controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::burqa.burqa');
+module.exports = createCoreController('api::order.order');

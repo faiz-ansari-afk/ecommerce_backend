@@ -22,9 +22,12 @@
     "cart_status": {
       "type": "enumeration",
       "enum": [
-        "ghosted",
+        "abandoned",
+        "ordered",
         "active"
-      ]
+      ],
+      "default": "active",
+      "required": true
     }
   }
 }

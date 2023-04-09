@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "burqas",
+  "collectionName": "products",
   "info": {
-    "singularName": "burqa",
-    "pluralName": "burqas",
-    "displayName": "burqa",
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "product",
     "description": ""
   },
   "options": {
@@ -22,10 +22,15 @@
       "multiple": true,
       "required": true,
       "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
+        "images"
+      ]
+    },
+    "cover_image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
       ]
     },
     "description": {
@@ -44,7 +49,7 @@
     },
     "shop_price": {
       "type": "integer",
-      "required": true
+      "required": false
     },
     "base_price": {
       "type": "integer",
@@ -59,20 +64,13 @@
       "type": "integer",
       "required": true
     },
-    "color_variants": {
+    "color_and_size_variants": {
       "type": "component",
       "repeatable": true,
-      "component": "burqa-variants.variants"
+      "component": "tshirts-variants.tshirt-variants"
     },
-    "cover_image": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
+    "additional_data": {
+      "type": "json"
     }
   }
 }

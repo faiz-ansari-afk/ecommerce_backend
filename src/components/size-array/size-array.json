@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_size_array_size_arrays",
+  "info": {
+    "displayName": "size_array",
+    "icon": "apple-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "sizes": {
+      "type": "enumeration",
+      "enum": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "i40",
+        "i41",
+        "i42",
+        "i43",
+        "i44",
+        "i45",
+        "i46",
+        "i47",
+        "i48",
+        "i49"
+      ],
+      "required": true
+    },
+    "price": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

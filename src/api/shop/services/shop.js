@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * burqa service
+ * shop service
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::burqa.burqa');
+module.exports = createCoreService('api::shop.shop');

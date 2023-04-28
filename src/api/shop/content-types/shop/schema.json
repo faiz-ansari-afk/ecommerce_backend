@@ -18,15 +18,12 @@
       "unique": true
     },
     "contact_mobile": {
-      "type": "integer",
-      "required": true,
-      "max": 10,
-      "min": 10
+      "type": "biginteger",
+      "required": true
     },
     "email": {
       "type": "string",
-      "required": true,
-      "regex": "/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/"
+      "required": true
     },
     "cover_image": {
       "type": "media",
@@ -52,10 +49,8 @@
       "type": "string"
     },
     "whatsapp_number": {
-      "type": "integer",
-      "required": true,
-      "max": 10,
-      "min": 10
+      "type": "biginteger",
+      "required": true
     },
     "description": {
       "type": "richtext",
@@ -68,6 +63,56 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::product.product"
+    },
+    "area": {
+      "type": "enumeration",
+      "enum": [
+        "Not my area",
+        "Mangal Bazar",
+        "Lala Shopping",
+        "Royal Plaza",
+        "Teen batti",
+        "Miracle Mall",
+        "Kotergate",
+        "Shanti Nagar",
+        "Gaibi Nagar",
+        "Babuchuni",
+        "Divanshah Dargah",
+        "Thana Road",
+        "Qaiser Baugh",
+        "Baug-E-Firdaus",
+        "Millat Nagar",
+        "Avchit Pada",
+        "Baba Hotel",
+        "Lahoti"
+      ],
+      "required": true
+    },
+    "banner_design": {
+      "type": "richtext",
+      "required": true
+    },
+    "product_for": {
+      "type": "enumeration",
+      "enum": [
+        "MALE",
+        "FEMALE",
+        "KIDS",
+        "BOTH"
+      ],
+      "required": true
+    },
+    "search_text": {
+      "type": "string",
+      "required": true
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
+    },
+    "followers": {
+      "type": "json"
     }
   }
 }

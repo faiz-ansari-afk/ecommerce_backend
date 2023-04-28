@@ -4,15 +4,29 @@
   "info": {
     "singularName": "home-page",
     "pluralName": "home-pages",
-    "displayName": "home page"
+    "displayName": "home page",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "hero_1_data": {
-      "type": "json"
+    "FIRST_HERO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "hp-hero.hero-one",
+      "required": true
+    },
+    "SECOND_HERO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "hp-hero.hero-one"
+    },
+    "THIRD_HERO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "hp-hero.hero-one"
     }
   }
 }

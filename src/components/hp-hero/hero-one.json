@@ -1,0 +1,75 @@
+{
+  "collectionName": "components_hp_hero_one_hero_ones",
+  "info": {
+    "displayName": "hp_hero",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "image_gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "hero_for": {
+      "type": "enumeration",
+      "enum": [
+        "product",
+        "shop"
+      ],
+      "required": true
+    },
+    "shop": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::shop.shop"
+    },
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    },
+    "cover_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "primaryTitle": {
+      "type": "component",
+      "repeatable": false,
+      "component": "title-and-classes.title-class",
+      "required": true
+    },
+    "secondaryTitle": {
+      "type": "component",
+      "repeatable": false,
+      "component": "title-and-classes.title-class",
+      "required": true
+    },
+    "description": {
+      "type": "component",
+      "repeatable": false,
+      "component": "title-and-classes.title-class"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "title-and-classes.title-class",
+      "required": true
+    }
+  }
+}

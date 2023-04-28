@@ -76,6 +76,26 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::shop.shop"
+    },
+    "theme": {
+      "type": "enumeration",
+      "enum": [
+        "MALE",
+        "FEMALE",
+        "BOTH",
+        "KIDS"
+      ],
+      "default": "BOTH",
+      "required": true
+    },
+    "product_hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "product-hero.product-hero"
+    },
+    "search_text": {
+      "type": "text",
+      "required": true
     }
   }
 }

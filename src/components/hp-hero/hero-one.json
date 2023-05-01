@@ -14,19 +14,12 @@
         "videos"
       ]
     },
-    "image_gallery": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
-    },
     "hero_for": {
       "type": "enumeration",
       "enum": [
         "product",
-        "shop"
+        "shop",
+        "manyproducts"
       ],
       "required": true
     },
@@ -40,6 +33,38 @@
       "relation": "oneToOne",
       "target": "api::product.product"
     },
+    "first_title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "title-and-classes.title-class",
+      "required": true
+    },
+    "second_title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "title-and-classes.title-class",
+      "required": false
+    },
+    "description": {
+      "type": "component",
+      "repeatable": false,
+      "component": "title-and-classes.title-class",
+      "required": true
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "title-and-classes.title-class",
+      "required": true
+    },
+    "image_gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
     "cover_image": {
       "type": "media",
       "multiple": false,
@@ -48,28 +73,10 @@
         "images"
       ]
     },
-    "primaryTitle": {
-      "type": "component",
-      "repeatable": false,
-      "component": "title-and-classes.title-class",
-      "required": true
-    },
-    "secondaryTitle": {
-      "type": "component",
-      "repeatable": false,
-      "component": "title-and-classes.title-class",
-      "required": true
-    },
-    "description": {
+    "glassmorphism_div": {
       "type": "component",
       "repeatable": false,
       "component": "title-and-classes.title-class"
-    },
-    "button": {
-      "type": "component",
-      "repeatable": false,
-      "component": "title-and-classes.title-class",
-      "required": true
     }
   }
 }

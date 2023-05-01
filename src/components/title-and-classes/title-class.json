@@ -1,20 +1,18 @@
 {
   "collectionName": "components_title_and_classes_title_classes",
   "info": {
-    "displayName": "title_class"
+    "displayName": "title_class",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "title": {
-      "type": "string",
-      "required": true
-    },
-    "tailwindClasses": {
       "type": "text",
       "required": true
     },
-    "extraClasses": {
-      "type": "text"
+    "reactCSSstyle": {
+      "type": "json",
+      "required": true
     }
   }
 }

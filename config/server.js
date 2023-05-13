@@ -4,4 +4,9 @@ module.exports = ({ env }) => ({
   app: {
     keys: env.array('APP_KEYS'),
   },
+  webhooks: {
+    defaultHeaders: {
+      Authorization: `Bearer ${env('WEBHOOK_TOKEN')}`,
+    },
+  }
 });

@@ -81,6 +81,11 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user"
+    },
+    "notify": {
+      "type": "boolean",
+      "default": true,
+      "required": true
     }
   }
 }

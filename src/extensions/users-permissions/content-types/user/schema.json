@@ -70,6 +70,16 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::cart.cart"
+    },
+    "contact": {
+      "type": "biginteger"
+    },
+    "profile_pic": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

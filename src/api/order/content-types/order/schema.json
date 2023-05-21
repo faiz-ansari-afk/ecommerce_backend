@@ -86,6 +86,9 @@
       "type": "boolean",
       "default": true,
       "required": true
+    },
+    "customMessage": {
+      "type": "text"
     }
   }
 }

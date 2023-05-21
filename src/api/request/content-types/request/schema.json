@@ -1,0 +1,82 @@
+{
+  "kind": "collectionType",
+  "collectionName": "requests",
+  "info": {
+    "singularName": "request",
+    "pluralName": "requests",
+    "displayName": "request",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "pending",
+        "approved",
+        "rejected",
+        "completed",
+        "closed"
+      ],
+      "default": "pending",
+      "required": true
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "requested_by": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "comments": {
+      "type": "component",
+      "repeatable": true,
+      "component": "comment.comment"
+    },
+    "address": {
+      "type": "richtext",
+      "required": true
+    },
+    "custom_message": {
+      "type": "text"
+    },
+    "owner_contact": {
+      "type": "biginteger"
+    },
+    "subscribers": {
+      "type": "json"
+    },
+    "estimated": {
+      "type": "date"
+    },
+    "comment_enabled": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "request_for": {
+      "type": "enumeration",
+      "enum": [
+        "Product",
+        "Shop"
+      ],
+      "required": true
+    },
+    "note": {
+      "type": "text"
+    }
+  }
+}

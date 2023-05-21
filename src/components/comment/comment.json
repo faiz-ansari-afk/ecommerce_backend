@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_comment_comments",
+  "info": {
+    "displayName": "comment",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "comment": {
+      "type": "text",
+      "required": true
+    },
+    "commentedAt": {
+      "type": "datetime",
+      "required": true,
+      "default": "2023-05-18T18:31:00.000Z"
+    },
+    "isBlock": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "block_reason": {
+      "type": "enumeration",
+      "enum": [
+        "Kele, ladki chedne ke liye nhi hai ye site.",
+        "Gaali galoch kayko krne ka.",
+        "Galat baat kiya tune, isliye ban hai."
+      ]
+    }
+  }
+}

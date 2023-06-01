@@ -6,11 +6,6 @@
   },
   "options": {},
   "attributes": {
-    "user": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "plugin::users-permissions.user"
-    },
     "comment": {
       "type": "text",
       "required": true
@@ -32,6 +27,10 @@
         "Gaali galoch kayko krne ka.",
         "Galat baat kiya tune, isliye ban hai."
       ]
+    },
+    "user": {
+      "type": "json",
+      "required": true
     }
   }
 }

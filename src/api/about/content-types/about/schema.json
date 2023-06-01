@@ -1,0 +1,69 @@
+{
+  "kind": "singleType",
+  "collectionName": "abouts",
+  "info": {
+    "singularName": "about",
+    "pluralName": "abouts",
+    "displayName": "about"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description_para_one": {
+      "type": "richtext"
+    },
+    "description_para_two": {
+      "type": "richtext"
+    },
+    "description_para_three": {
+      "type": "richtext"
+    },
+    "hero_image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "hero_title": {
+      "type": "string",
+      "required": true
+    },
+    "hero_description": {
+      "type": "text",
+      "required": true
+    },
+    "admin_one_image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": false
+    },
+    "admin_one_details": {
+      "type": "json",
+      "required": true
+    },
+    "admin_two_image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "admin_two_details": {
+      "type": "json",
+      "required": true
+    },
+    "admin_one_description": {
+      "type": "richtext"
+    },
+    "admin_two_description": {
+      "type": "richtext"
+    }
+  }
+}

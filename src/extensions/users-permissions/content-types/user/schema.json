@@ -75,11 +75,22 @@
       "type": "biginteger"
     },
     "profile_pic": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
+      ]
+    },
+    "local_role": {
+      "type": "enumeration",
+      "enum": [
+        "customer",
+        "delivery",
+        "admin"
       ],
-      "type": "media",
-      "multiple": false
+      "default": "customer",
+      "required": true
     }
   }
 }

@@ -91,6 +91,9 @@
       ],
       "default": "customer",
       "required": true
+    },
+    "firebaseToks": {
+      "type": "text"
     }
   }
 }

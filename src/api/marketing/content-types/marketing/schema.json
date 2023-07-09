@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "marketings",
+  "info": {
+    "singularName": "marketing",
+    "pluralName": "marketings",
+    "displayName": "marketing"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pushTokens": {
+      "type": "json"
+    },
+    "whatsappNumbers": {
+      "type": "json"
+    }
+  }
+}

@@ -2,7 +2,9 @@
 Note: I have created this project from scratch while learning NextJS, there are many rooms empty for improvements, if you can improve code than please **contribute**.
 Thank you.
 
+
 ## Setting up Strapi E-Commerce Backend with PostgreSQL
+
 For frontend we are using [NextJS](https://github.com/faiz-ansari-afk/ijazat_next "NextJS Frontend").
 
 Welcome to the guide on setting up a Strapi E-Commerce backend using PostgreSQL as the database. This guide will walk you through the process of setting up your development environment and running the Strapi backend locally.
@@ -140,4 +142,6 @@ You have successfully set up Cloudinary as the image storage provider for your S
 2. If you are working in local development without cloudinary, then the API response returned by Strapi is `JSON`, where you have to dig down the nested field to get the image URL. 
 3. There is already a function I have created to do this hardwork at [Frontend](http://https://github.com/faiz-ansari-afk/ijazat_next "Frontend") (repo).
 4. Just pass the json and it will return you the Image URL.
+
 5. For NextJS ISR you will be needed one more env var `WEBHOOK_TOKEN=your secret value` this value must match with the value in Frontend env var to properly work ISR revalidation and other SMS services.
+

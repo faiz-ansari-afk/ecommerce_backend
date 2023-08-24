@@ -1,7 +1,7 @@
 # For Fresher and Beginners in ReactJS
 Note: I have created this project from scratch while learning NextJS, there are many rooms empty for improvements, if you can improve code than please **contribute**.
 Thank you.
-##Setting up Strapi E-Commerce Backend with PostgreSQL
+#Setting up Strapi E-Commerce Backend with PostgreSQL
 For frontend we are using [NextJS](https://github.com/faiz-ansari-afk/ijazat_next "NextJS Frontend").
 
 Welcome to the guide on setting up a Strapi E-Commerce backend using PostgreSQL as the database. This guide will walk you through the process of setting up your development environment and running the Strapi backend locally.
